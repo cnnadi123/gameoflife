@@ -1,0 +1,20 @@
+//CellGrid
+// From http://www.ericweisstein.com/encyclopedias/life/LightweightSpaceship.html
+
+	public void lightWeightSpaceship() {
+		for(int i = 0; i < maxRows; i++)
+			for(int j = 0; j < maxCols; j++)
+				cells[i][j] = false;
+		cells[2][3] = true;
+		cells[2][4] = true;
+		cells[3][1] = true;
+		cells[3][2] = true;
+		cells[3][4] = true;
+		cells[3][5] = true;
+		cells[4][1] = true;
+		cells[4][2] = true;
+		cells[4][3] = true;
+		cells[4][4] = true;
+		cells[5][2] = true;
+		cells[5][3] = true;	
+	}

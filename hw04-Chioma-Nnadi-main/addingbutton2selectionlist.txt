@@ -1,0 +1,16 @@
+// Adding another pattern selection button:
+// In Class GameOfLife, find the inner class
+// private class SetupListener implements ActionListener {
+// and scroll down the method public void actionPerformed(ActionEvent arg0)
+// Immediately BEFORE setupDialog.pack(); put the code for the new button:
+
+// choose different names for the new button name, different text for the button
+// and all the associated method in CellGrid
+
+			JButton theNewButtonName = new JButton("The New Button Text");
+			theNewButtonName.addActionListener(e -> {
+				cellGrid.theNewButtonCode();
+				setupDialog.dispose();
+				graph.repaint();
+			});
+			setupDialog.add(theNewButtonName);
